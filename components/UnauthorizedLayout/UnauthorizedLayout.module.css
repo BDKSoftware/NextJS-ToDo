@@ -15,11 +15,10 @@
 }
 .main {
     margin: 3rem auto;
-    width: 50%;
+    width: 30%;
     height: 40vh;
     max-width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }

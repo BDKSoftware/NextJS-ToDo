@@ -2,22 +2,16 @@
 import { useEffect } from "react";
 import { useAuth } from "../../components/AuthContext/AuthContext";
 import { useRouter } from "next/router";
+import Layout from "../../components/Layout/Layout";
 
 function Home({}) {
   const router = useRouter();
   const { user, logout } = useAuth();
 
   return (
-    <div>
-      <h1>Home</h1>
-      <button
-        onClick={() => {
-          logout();
-        }}
-      >
-        Press me
-      </button>
-    </div>
+    <Layout>
+      <button onClick={() => logout()}>Press Me</button>
+    </Layout>
   );
 }
 
