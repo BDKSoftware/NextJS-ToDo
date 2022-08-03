@@ -5,7 +5,10 @@ function Layout(props) {
   return (
     <div className={classes.div}>
       <header className={classes.header}>
-        <span>Next To-Do </span>
+        <span>
+          <Link href="/home">Next To-Do </Link>{" "}
+        </span>
+
         <nav>
           <Link href="/account">Account</Link>
         </nav>
