@@ -8,7 +8,6 @@ function Layout(props) {
         <span>
           <Link href="/home">Next To-Do </Link>{" "}
         </span>
-
         <nav>
           <Link href="/account">Account</Link>
         </nav>
