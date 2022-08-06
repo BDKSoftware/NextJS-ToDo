@@ -21,7 +21,7 @@ function TodoCard({ tasks, handleAddTask, user, handleDeleteTask }) {
       <div className={classes.TodoCard}>
         <div className={classes.cardHeader}>
           <section>
-            <h1>To Do's</h1>
+            <h1>{"To Do's"}</h1>
             <span>{tasks.length} Tasks Remaining</span>
           </section>
           <div>

@@ -96,7 +96,7 @@ function LoginForm(props) {
         <button type="submit">Login</button>
         <span>Forgot Password?</span>
         <h1>
-          Don't Have an Account? <Link href="/signup">Sign Up</Link>
+          {"Don't Have an Account?"} <Link href="/signup">Sign Up</Link>
         </h1>
       </form>
     </Fragment>
