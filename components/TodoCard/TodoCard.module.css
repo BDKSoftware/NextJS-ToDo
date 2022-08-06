@@ -1,9 +1,6 @@
 .TodoCard {
     width: 100%;
     height: 100%;
-    border: 1px solid purple;
-    border-radius: 10px;
-
 }
 
 .cardHeader {
@@ -87,21 +84,63 @@
     overflow-y: scroll;
     height: 88%;
     box-sizing: padding-box;
+    border: 1px solid purple;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .taskList::-webkit-scrollbar {
     display: none;
 }
 
-.taskList div {
+.taskList .contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 33%;
+    
+}
+
+.taskList section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33%;
+ 
+}
+
+.taskList .contentDiv .task {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.taskList .contentDiv .description {
+   color: gray;
+   font-size: small;
+   margin-left: 10px;
+}
+
+.taskList .mainDiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 5vh;
+    height: 7vh;
     border-bottom: 1px solid purple;
     margin: 10px;
     padding: 5px;
+}
+
+.taskList .dateDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 33%;
 }
 
 .taskList button {

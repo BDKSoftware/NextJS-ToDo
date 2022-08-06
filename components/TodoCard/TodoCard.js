@@ -8,6 +8,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 
 function TodoCard({ tasks, handleAddTask, user, handleDeleteTask }) {
   const [newTask, setNewTask] = useState("");
+  const [showModal, setShowModal] = useState(true);
 
   function handleChange(event) {
     event.preventDefault();
@@ -46,8 +47,11 @@ function TodoCard({ tasks, handleAddTask, user, handleDeleteTask }) {
         <div className={classes.taskList}>
           {tasks.map((task) => {
             return (
-              <div key={task}>
-                <span>{task}</span>
+              <div key={task} className={classes.mainDiv}>
+                <div className={classes.contentDiv}>
+                  <span className={classes.task}>{task}</span>
+                </div>
+                <div className={classes.dateDiv}></div>
                 <section>
                   <button>
                     <CheckBoxIcon className={classes.checkIcon} />
@@ -60,7 +64,6 @@ function TodoCard({ tasks, handleAddTask, user, handleDeleteTask }) {
                   >
                     <DeleteIcon className={classes.deleteIcon} />
                   </button>
-                  <button></button>
                 </section>
               </div>
             );

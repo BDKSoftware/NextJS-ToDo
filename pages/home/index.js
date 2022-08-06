@@ -17,13 +17,11 @@ function Home() {
   const router = useRouter();
   const { logout, user } = useAuth();
   const [tasks, setTasks] = useState([]);
-  const [completed, setCompleted] = useState(0);
 
   async function getTasks(uid) {
     const docRef = doc(db, "users", uid);
     await onSnapshot(docRef, (snapShot) => {
       setTasks(snapShot.data().tasks);
-      setCompleted(snapShot.data().completed);
     });
   }
 
@@ -59,17 +57,6 @@ function Home() {
       });
   }
 
-  async function updateCompletedForTask(uid, task) {
-    let updatedValue;
-    if (task.completed == true) {
-      updatedValue = false;
-    }
-
-    if (task.completed == false) {
-      updatedValue = true;
-    }
-  }
-
   useEffect(() => {
     getTasks(user.uid);
   }, []);
@@ -78,7 +65,6 @@ function Home() {
       <TodoCard
         user={user}
         tasks={tasks}
-        completed={completed}
         handleAddTask={addTask}
         handleDeleteTask={deleteTask}
       />
