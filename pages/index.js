@@ -12,6 +12,10 @@ export default function Login() {
     <div>
       <Head>
         <title>NextJS Todo Login</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        ></meta>
         <meta name="description" content="ToDo Practice Project" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
