@@ -1,4 +1,5 @@
 // Home Screen
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import { useAuth } from "../../components/AuthContext/AuthContext";
 import { useRouter } from "next/router";

@@ -8,7 +8,7 @@ export default function SignUp() {
   return (
     <div>
       <Head>
-        <title>NextJS Todo Login</title>
+        <title>NextJS Todo Sign Up</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"

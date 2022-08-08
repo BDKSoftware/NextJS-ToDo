@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../../components/Layout/Layout";
 import AccountCard from "../../components/AccountCard/AccountCard";
 import { useAuth } from "../../components/AuthContext/AuthContext";
