@@ -8,7 +8,7 @@ import { useAuth } from "../AuthContext/AuthContext";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-function LoginForm(props) {
+function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -70,29 +70,26 @@ function LoginForm(props) {
   return (
     <Fragment>
       <form className={classes.form} onSubmit={handleSubmit} autoComplete="off">
-        <div>
-          <input
-            type="text"
-            name="email"
-            value={email}
-            placeholder="Email"
-            onChange={(event) => {
-              handleInput(event, "EMAIL");
-            }}
-          />
-        </div>
+        <input
+          type="text"
+          name="email"
+          value={email}
+          placeholder="Email"
+          onChange={(event) => {
+            handleInput(event, "EMAIL");
+          }}
+        />
 
-        <div>
-          <input
-            type="password"
-            name="password"
-            value={password}
-            placeholder="Password"
-            onChange={(event) => {
-              handleInput(event, "PASSWORD");
-            }}
-          />
-        </div>
+        <input
+          type="password"
+          name="password"
+          value={password}
+          placeholder="Password"
+          onChange={(event) => {
+            handleInput(event, "PASSWORD");
+          }}
+        />
+
         <button type="submit">Login</button>
         <span>Forgot Password?</span>
         <h1>

@@ -51,11 +51,8 @@ function TodoCard({ tasks, handleAddTask, user, handleDeleteTask }) {
                 <div className={classes.contentDiv}>
                   <span className={classes.task}>{task}</span>
                 </div>
-                <div className={classes.dateDiv}></div>
+
                 <section>
-                  <button>
-                    <CheckBoxIcon className={classes.checkIcon} />
-                  </button>
                   <button
                     onClick={(event) => {
                       event.preventDefault();

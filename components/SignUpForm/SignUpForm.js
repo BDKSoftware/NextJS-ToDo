@@ -112,7 +112,7 @@ function SignUpForm() {
             handleInput(event, "CONFIRMPASSWORD");
           }}
         />
-        <button>Sign Up For Next To-Do</button>
+        <button>Sign Up</button>
         <h1>
           Alrready Have an Account? <Link href="/">Login</Link>
         </h1>

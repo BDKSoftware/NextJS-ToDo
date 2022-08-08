@@ -6,7 +6,7 @@ function AccountCard({ user, numOfTasks, logout }) {
     <Fragment>
       <div className={classes.container}>
         <div className={classes.header}>
-          <span>Account</span>
+          <span>My Account</span>
         </div>
         <div className={classes.main}>
           <div>
@@ -15,7 +15,7 @@ function AccountCard({ user, numOfTasks, logout }) {
           </div>
           <div>
             <h1>UID : </h1>
-            <span>{user.uid}</span>
+            <span className={classes.small}>{user.uid}</span>
           </div>
           <div>
             <h1>Number of Tasks remaining : </h1>
