@@ -50,6 +50,7 @@
     height: 4vh;
     border-radius: 5px;
     border: 1px solid white;
+    background-color: white;
 }
 
 .cardHeader input:focus {
